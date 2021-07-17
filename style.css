@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Rajdhani", sans-serif;
+  }
+  
+  .todo-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2f3542;
+  }
+  
+  .new-task {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .new-task-heading {
+    padding: 0.9rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: whitesmoke;
+    background-color: fuchsia;
+  }
+  
+  .input-body {
+    padding: 1rem;
+    display: flex;
+  }
+  
+  #input {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: darkblue;
+  }
+  #input:focus {
+    outline-color: #2ecc71;
+  }
+  .add-btn {
+    background-color: #2ecc71;
+    color: #ffff;
+    padding: 5px 3rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .add-btn:hover {
+    background-color: #23b35f;
+    color: #ffff;
+  }
+  .task-list {
+    padding: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: aquamarine;
+  }
+  .task-item{
+    padding: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: wheat;
+    color: black;
+  }
+  .delete-item{
+    color:darkblue;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .delete-item:hover{
+    color: blueviolet;
+  }
+  .delete-task{
+    text-decoration: line-through;
+    color: blueviolet;
+  }
+  .task-list h4 {
+    align-self: center;
+    color: black;
+  }
+  .delete-btn {
+    align-self: center;
+    background-color: chartreuse;
+    color: black;
+    padding: 10px 1.3rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .delete-btn:hover {
+    background-color: #eb1e43;
+  }
+  
+  @media (max-width: 600px) {
+    html {
+      font-size: 14px;
+    }
+    .todo-container {
+      width: 90%;
+    }
+  }
+  @media (max-width: 400px) {
+    html {
+      font-size: 13px;
+    }
+    .todo-container {
+      width: 100%;
+    }
+  }
+  @media (max-width: 300px) {
+    html {
+      font-size: 11px;
+    }
+    .todo-container {
+      width: 100%;
+    }
+  }
+  
